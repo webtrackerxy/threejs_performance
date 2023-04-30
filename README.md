@@ -9,7 +9,7 @@ serve -l 1234
 
 ## B. Test the performance:
 
-Open a broswer ( e.g. Chrome) and visit the following pages to check the rendering performance. The FPS is based on my Laptop. Other's computers have have little bit difference.
+Open a broswer ( e.g. Chrome) and visit the following pages to check the rendering performance. The FPS is based on my Laptop. Other's computers may have slightly difference in performance.
 
 ### 1. Original page
 
@@ -32,3 +32,5 @@ http://localhost:1234/instancemesh
 FPS: ~140
 
     InstancedMesh is a class in Three.js that allows you to render multiple instances of the same object (same geometry and material) with a single draw call where the GPU renders multiple instances of an object with a single draw call, reducing the overhead involved in managing and rendering individual objects.
+
+Both mergebuffer and instancemesh require the BufferGeometryUtils classes from the Three.js repository : three/examples/jsm/utils/BufferGeometryUtils.js
